@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WorkBook</string>
+    <string name="addnewitem">AddNewItem</string>
+    <string name="edit">Edit</string>
+    <string name="delate">Delate</string>
+    <string name="enter_image">Enter Image</string>
+    <string name="enter_party_name">Enter party name</string>
+    <string name="item_name">Item name</string>
+    <string name="gross_wt">Gross Wt</string>
+    <string name="gross_kundan">Gross Kundan</string>
+    <string name="net_kundan">Net Kundan</string>
+    <string name="net_wt">Net Wt</string>
+    <string name="labour_details_below">Labour details below</string>
+    <string name="extra_details">Extra details</string>
+    <string name="samosa_no">Samosa No.</string>
+    <string name="ad">AD</string>
+    <string name="samosa">Samosa</string>
+    <string name="client_no">Client No.</string>
+    <string name="labour_name">Labour name</string>
+    <string name="p_kundan">P kundan</string>
+    <string name="stone_no">Stone No</string>
+    <string name="name">Name</string>
+    <string name="stone_details_below">Stone Details Below</string>
+    <string name="pure_kundan_details">Pure Kundan Details</string>
+    <string name="labour_stone">Labour Stone</string>
+    <string name="labour_kundan">Labour Kundan</string>
+    <string name="item_entry_date">Item Entry Date</string>
+    <string name="item_exit_date">Item Exit Date</string>
+    <string name="item_exit_date_Et">Item Exit Date</string>
+    <string name="last_updated">Last Updated</string>
+    <string name="delete_all">delete all</string>
+    <string name="sort">Sort</string>
+    <string name="search">search</string>
+</resources>

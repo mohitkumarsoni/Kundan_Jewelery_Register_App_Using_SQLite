@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context=".Activities.Item_Details_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+        <ImageView
+            android:id="@+id/detailImageIv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2"
+            android:padding="@dimen/_2sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/item_entry_date"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/item_exit_date"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"/>
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/detail_item_entry_Iv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="1/1/23"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"/>
+                <TextView
+                    android:id="@+id/detail_item_exit_Iv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="5/1/23"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+                    android:textStyle="italic"/>
+
+
+
+            </LinearLayout>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/client_no"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_client_num_Tv"
+                    tools:text="1"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+
+
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="@string/item_name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_item_name_Tv"
+                    tools:text="Necklace"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TextView
+                android:text="@string/stone_details_below"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"/>
+            <TableRow>
+                <TextView
+                    android:text="@string/samosa_no"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_samosa_no_Tv"
+                    tools:text="54"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Ad No."
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_ad_no_Tv"
+                    tools:text="16"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="@string/stone_no"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_stone_no_Tv"
+                    tools:text="10"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TextView
+                android:text="Item Weight"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"/>
+            <TableRow>
+                <TextView
+                    android:text="@string/net_wt"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_net_wt_Tv"
+                    tools:text="10.168"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="@string/gross_wt"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_gross_wt_Tv"
+                    tools:text="19.568"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TextView
+                android:text="@string/pure_kundan_details"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:gravity="center"/>
+            <TableRow>
+                <TextView
+                    android:text="@string/net_kundan"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_net_kundan_Tv"
+                    tools:text="0.950"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="@string/gross_kundan"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_gross_kundan_Tv"
+                    tools:text="1.080"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/extraClientDetailsTv"
+                tools:text="extra client details (if any)"
+                android:textColor="@color/colorTextSecondary"
+                android:textStyle="bold"
+                android:gravity="start" />
+            <TextView
+                android:text="@string/labour_details_below"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center"/>
+            <TableRow>
+                <TextView
+                    android:text="@string/labour_name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_labour_name_Tv"
+                    tools:text="Minesh Soni"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="@string/labour_stone"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_labour_stone_Tv"
+                    tools:text="68"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="@string/labour_kundan"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textHint"/>
+                <TextView
+                    android:id="@+id/detail_labour_kundan_Tv"
+                    tools:text="1.06"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/extraLabourDetailsTv"
+                tools:text="extra labour details (if any)"
+                android:textColor="@color/colorTextSecondary"
+                android:textStyle="bold"
+                android:gravity="start" />
+
+            <TableRow>
+                <TextView
+                    android:text="@string/last_updated"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:background="@color/colorThemeExtra"
+                    android:textColor="@color/white"/>
+                <TextView
+                    android:id="@+id/detail_last_updated_Tv"
+                    tools:text="1.06"
+                    android:textSize="@dimen/_16sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="@dimen/_20sdp"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

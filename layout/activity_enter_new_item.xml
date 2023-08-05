@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
+    tools:context=".Activities.Enter_Edit_New_Item_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/itemImageIv"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:padding="@dimen/_10sdp"
+            android:src="@drawable/ic_add"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="@dimen/_1sdp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_image"
+            android:textSize="@dimen/_15sdp"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/clientNumEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="@string/client_no"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true" />
+
+            <EditText
+                android:id="@+id/itemNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:layout_weight="0.4"
+                android:hint="@string/item_name"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:padding="@dimen/_2sdp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/netWeightET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="@string/net_wt"
+                android:layout_weight="1"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:inputType="numberDecimal"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+            <EditText
+                android:id="@+id/grossWeightEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="@string/gross_wt"
+                android:layout_weight="1"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/samosaCountEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:layout_weight="1"
+                android:background="@drawable/input_text_bg_highlight"
+                android:inputType="number"
+                android:cursorVisible="true"
+                android:hint="@string/samosa"
+                android:padding="@dimen/_2sdp"
+                android:textAlignment="center"
+                android:textColor="@color/textHint"
+                android:textSize="@dimen/_20sdp" />
+
+            <EditText
+                android:id="@+id/adCountEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="@string/ad"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+            <EditText
+                android:id="@+id/regularStoneCountET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="Regular St"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/netKundanET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="Nt kundan"
+                android:layout_weight="1"
+                android:textSize="@dimen/_20sdp"
+                android:inputType="numberDecimal"
+                android:textAlignment="center"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+            <EditText
+                android:id="@+id/grossKundanET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="Gr kundan"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/itemExitDateEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/input_text_bg_highlight"
+            android:cursorVisible="true"
+            android:hint="@string/item_exit_date_Et"
+            android:inputType="date"
+            android:padding="@dimen/_2sdp"
+            android:textAlignment="center"
+            android:textColor="@color/textHint"
+            android:textSize="@dimen/_20sdp" />
+
+        <EditText
+            android:id="@+id/extraClientDetailsEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_text_bg_highlight"
+            android:hint="@string/extra_details"
+            android:textSize="@dimen/_20sdp"
+            android:textAlignment="center"
+            android:inputType="text"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/textHint"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:cursorVisible="true"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/labour_details_below"
+            android:gravity="center"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginTop="@dimen/_4sdp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/labourNameET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="@string/name"
+                android:layout_weight="1"
+                android:inputType="textPersonName"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:layout_marginEnd="@dimen/_2sdp"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+            <EditText
+                android:id="@+id/labourStoneEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="@string/stone_no"
+                android:layout_weight="1"
+                android:inputType="number"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+            <EditText
+                android:id="@+id/labourKundanET"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_text_bg_highlight"
+                android:hint="@string/p_kundan"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"
+                android:layout_marginStart="@dimen/_2sdp"
+                android:textSize="@dimen/_20sdp"
+                android:textAlignment="center"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/textHint"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:cursorVisible="true"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/extraLabourDetailsEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_text_bg_highlight"
+            android:hint="@string/extra_details"
+            android:textSize="@dimen/_20sdp"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:padding="@dimen/_2sdp"
+            android:textColor="@color/textHint"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:cursorVisible="true"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/saveItemDetailsFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_6sdp"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:backgroundTint="@color/textHint"
+        android:src="@drawable/ic_check" />
+
+
+</RelativeLayout>
